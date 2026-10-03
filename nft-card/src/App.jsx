@@ -1,4 +1,5 @@
-import "./App.css";
+
+ import "./App.css";
 
 const cards = [
   {
@@ -31,17 +32,23 @@ const cards = [
     image:
       "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
   },
-  {
-    id: 4,
-    title: "Future Vision #504",
-    description: "A collection that connects technology and creativity.",
-    price: "0.067 ETH",
-    time: "7 days left",
-    creator: "Emma Carter",
-    image:
-      "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=800&q=80",
-  },
 ];
+
+function Header() {
+  return (
+    <header className="header">
+      <div className="logo">
+        <span>◆</span> NFT Gallery
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+  );
+}
 
 function Card({ card }) {
   return (
@@ -76,18 +83,25 @@ function Card({ card }) {
 
 function CardList() {
   return (
-    <main className="page">
-      <section className="card-list">
-        {cards.map((card) => (
-          <Card key={card.id} card={card} />
-        ))}
-      </section>
-    </main>
+    <section className="card-list">
+      {cards.map((card) => (
+        <Card key={card.id} card={card} />
+      ))}
+    </section>
   );
 }
 
 function App() {
-  return <CardList />;
+  return (
+    <>
+      <Header />
+
+      <main className="page">
+        <h1 className="page-title">NFT Collection</h1>
+        <CardList />
+      </main>
+    </>
+  );
 }
 
 export default App;
