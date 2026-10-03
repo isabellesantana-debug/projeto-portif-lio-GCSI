@@ -1,0 +1,28 @@
+# NFT Gallery
+
+Projeto desenvolvido com React e Vite baseado no desafio NFT Preview Card Component do Frontend Mentor.
+
+## Tecnologias
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+
+## Funcionalidades
+
+- Cards de NFT
+- Header responsivo
+- Efeito hover
+- Animações
+- Design responsivo para celular e computador
+
+## Autor
+
+Isabelle da Silva Santana
+
+## Links
+
+Frontend Mentor:
+https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
